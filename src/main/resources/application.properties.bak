@@ -1,0 +1,11 @@
+spring.datasource.url=jdbc:postgresql://localhost:5432/student
+spring.datasource.username=spring
+spring.datasource.password=spring
+# spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration 
+# spring.jpa.properties.hibernate.id.new_generator_mappings=false
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.properties.hibernate.format_sql=true
+
+server.error.include-message=always

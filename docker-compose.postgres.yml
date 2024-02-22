@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  springboot_db:
+    image: postgres:11-alpine
+    container_name: springboot_db
+    environment:
+      - POSTGRES_USER=spring
+      - POSTGRES_PASSWORD=spring
+      - POSTGRES_DB=student
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
